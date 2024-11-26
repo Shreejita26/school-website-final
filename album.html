@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An album of our school</title>
+
+<style>
+  /* Basic page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: bisque;
+            justify-content: center;    /* Horizontal center */
+            align-items: center;   
+        }
+
+        /* Container for buttons */
+        .container {
+             text-align: center;
+             justify-content: center;    /* Horizontal center */
+             align-items: center;        /* Vertical center */
+             padding:10px;
+             
+        }
+
+        /* Button styles */
+        .btn {
+            padding: 12px 25px;
+            margin: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Hover effect for button */
+        .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        
+        h{
+            font-size: xx-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+            
+        .hover-button {
+            background-color: #007BFF; /* Blue background color */
+            color: white;  /* White text */
+            font-size: 20px; /* Text size */
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 22px 24px; /* Padding inside the button */
+            border-color: bisque;
+            border-radius: 8px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: all 0.3s ease; /* Smooth transition for hover effects */
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Subtle shadow */
+            
+        }
+        
+        /* Hover effect */
+        .hover-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            box-shadow: 0 6px 12px rgba(0, 86, 179, 0.4); /* Stronger shadow on hover */
+            transform: translateY(-2px); /* Slight upward movement */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+          
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <div padding:20px;margin:20px><img src="lmg.jpg" width="400px" height="300px" alt=""></div>
+        
+    <div class="gallery">
+       
+        <div class="gallery-item"><img src="premises.jpg" width="300px" height="300px" alt=""></div>
+        <div class="gallery-item"><img src="hall.jpg" width="300px" height="300px" alt=""></div>
+        <div class="gallery-item"><img src="science.jpg" width="300px" height="300px" alt=""></div>
+        <div class="gallery-item"><img src="tree.png" width="300px" height="300px" alt=""></div>
+        <div class="gallery-item"> <img src="yay.jpg" width="300px" height="200px" alt=""></div>
+        <div class="gallery-item"> <img src="drill.jpg" width="300px" height="200px" alt=""></div>
+        <div class="gallery-item">  <img src="swim.jpg" width="300px" height="200px" alt=""></div>
+        <div class="gallery-item"> <img src="awr2.jpg" width="300px" height="200px" alt=""></div>
+        <div class="gallery-item">  <img src="library.jpg" width="300px" height="200px" alt=""></div>
+        <div class="gallery-item"> <img src="computer.jpg" width="300px" height="200px" alt=""></div>
+        <div class="gallery-item">   <img src="bball.jpg" width="300px" height="200px" alt=""></div>
+        <div class="gallery-item">   <img src="carnival.jpg" width="300px" height="200px" alt=""></div>
+    </div>
+
+    <div> <img src="hehe.jpg" width="200px" height="200px" alt=""></div>
+
+    <div>
+
+    <button class="hover-button"><a href="index.html">Go to Home</button>
+    <button class="hover-button"><a href="dashboard.html">Go to Dashboard</button>
+        
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+

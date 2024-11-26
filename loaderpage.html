@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loading...</title>
+        <style>
+            /* Simple loading screen style */
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+                overflow: hidden;
+            }
+            .loading-container {
+                text-align: center;
+            }
+            .loading-message {
+                font-size: 24px;
+                font-weight: bold;
+                color: #333;
+            }
+
+            /* Loading spinner animation */
+            .loader {
+                border: 8px solid #f3f3f3; /* Light gray */
+                border-top: 8px solid #007BFF; /* Blue color */
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                animation: spin 2s linear infinite;
+                margin: 20px auto;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="loading-container">
+            <div class="loader"></div> <!-- Loading spinner -->
+            <div class="loading-message">Loading, please wait...</div>
+        </div>
+
+        <script>
+
+            window.onload = function() {
+            // Get the target page from URL parameters
+                const urlParams = new URLSearchParams(window.location.search);
+                const targetPage = urlParams.get('targetPage');
+                
+                setTimeout(() => {
+                    // Navigate to the target page
+                    window.location.href = targetPage;
+                }, 1000); 
+            }
+        </script>
+
+    </body>
+</html>

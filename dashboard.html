@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: bisque;
+            justify-content: center;    /* Horizontal center */
+            align-items: center;   
+        }
+
+        /* Container for buttons */
+        .container {
+             text-align: center;
+             justify-content: center;    /* Horizontal center */
+             align-items: center;        /* Vertical center */
+        }
+
+        /* Button styles */
+        .btn {
+            padding: 12px 25px;
+            margin: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Hover effect for button */
+        .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        
+        h{
+            font-size: xx-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+            
+        .hover-button {
+            background-color: #007BFF; /* Blue background color */
+            color: white;  /* White text */
+            font-size: 20px; /* Text size */
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 22px 24px; /* Padding inside the button */
+            border-color: bisque;
+            border-radius: 8px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: all 0.3s ease; /* Smooth transition for hover effects */
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Subtle shadow */
+            
+        }
+        
+        /* Hover effect */
+        .hover-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            box-shadow: 0 6px 12px rgba(0, 86, 179, 0.4); /* Stronger shadow on hover */
+            transform: translateY(-2px); /* Slight upward movement */
+        }
+
+        div {
+            margin: 30px;
+            padding:30px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    
+    <div class="container">
+
+        <div><img src="lmg.jpg" width="400px" height="300px" alt=""></div>
+
+        
+        <div><h><b>Know more about one of the most prestigious schools in India</b></h></div>
+        
+        <div>
+            <button class="btn" onclick="navigateToPage('history.html')" >History of La Martinere for Girls</button>
+            <button class="btn"  onclick="navigateToPage('admission.html')">Admission</button>
+            
+            <button class="btn" onclick="window.location.href='album.html'">Pictures</button>
+            <button class="btn" onclick="window.location.href='houses.html' ">About our 4 houses</button>
+            <button class="btn" onclick="window.location.href='notice.html'">Notice</button>
+        </div>
+
+        
+        <div> <a href="index.html">Go to Home</div>
+    </div>
+    
+    <script>
+        function navigateToPage(targetPage) {
+                    
+            const encodedTarget = encodeURIComponent(targetPage);
+            
+            window.location.href = `loaderpage.html?targetPage=${encodedTarget}`;
+        }
+    </script>
+</body>
+</html>
